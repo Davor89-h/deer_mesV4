@@ -244,6 +244,22 @@ async function init() {
       recorded_at TEXT DEFAULT (datetime('now'))
     )`)
 
+  sqlDb.run(`CREATE TABLE IF NOT EXISTS kalkulacije (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      naziv TEXT NOT NULL,
+      broj_nacrta TEXT,
+      materijal TEXT,
+      naziv_dijela TEXT,
+      ident_nr TEXT,
+      varijanta TEXT DEFAULT '50',
+      data TEXT DEFAULT '{}',
+      status TEXT DEFAULT 'draft',
+      napomena TEXT,
+      kreirao_id INTEGER,
+      created_at TEXT DEFAULT (datetime('now')),
+      updated_at TEXT DEFAULT (datetime('now'))
+    )`)
+
   // Seed if empty
   const userCount = toObject(sqlDb.exec('SELECT COUNT(*) as c FROM users'))?.c || 0
   if (userCount === 0) {

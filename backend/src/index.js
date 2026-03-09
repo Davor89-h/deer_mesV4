@@ -30,6 +30,7 @@ db.init().then(() => {
   app.use('/api/kpi', require('./routes/kpi'))
   app.use('/api/ai', require('./routes/ai'))
   app.use('/api/users', require('./routes/users'))
+  app.use('/api/kalkulacije', require('./routes/kalkulacije'))
 
   // Try multiple possible frontend dist paths
   const possiblePaths = [

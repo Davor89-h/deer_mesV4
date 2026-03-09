@@ -11,12 +11,13 @@ import {
   FileText, Brain, Activity, BarChart3,
   LogOut, Bell, ChevronRight, ChevronLeft, MessageSquare,
   Code2, Calendar, Monitor, Layers, Hammer, Menu, X,
-  ShoppingCart, FolderOpen, BarChart2, CheckSquare, Warehouse, UserCircle
+  ShoppingCart, FolderOpen, BarChart2, CheckSquare, Warehouse, UserCircle, Calculator
 } from 'lucide-react'
 
 const NAV_ITEMS = [
   { to:'/', key:'dashboard', Icon:LayoutDashboard, exact:true, group:'main' },
   { to:'/kpi', key:'kpi', Icon:BarChart2, group:'v6' },
+  { to:'/kalkulacije', key:'kalkulacije', Icon:Calculator, group:'v6' },
   { to:'/sales', key:'sales', Icon:ShoppingCart, group:'v6' },
   { to:'/quality', key:'quality', Icon:CheckSquare, group:'v6' },
   { to:'/warehouse', key:'warehouse', Icon:Warehouse, group:'v6' },

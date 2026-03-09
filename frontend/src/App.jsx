@@ -25,6 +25,7 @@ import WarehousePage from './pages/WarehousePage'
 import HRPage from './pages/HRPage'
 import DMSPage from './pages/DMSPage'
 import KPIPage from './pages/KPIPage'
+import KalkulacijePage from './pages/KalkulacijePage'
 
 function Private({ children }) {
   const { user } = useAuth()
@@ -44,6 +45,7 @@ export default function App() {
         <Route path="hr" element={<HRPage/>}/>
         <Route path="dms" element={<DMSPage/>}/>
         <Route path="kpi" element={<KPIPage/>}/>
+        <Route path="kalkulacije" element={<KalkulacijePage/>}/>
         <Route path="fixtures" element={<FixturesPage/>}/>
         <Route path="usage" element={<UsageTrackingPage/>}/>
         <Route path="machines" element={<MachinesPage/>}/>

@@ -19,6 +19,7 @@ export default {
     digital_twin: 'Digital Twin',
     forms: 'Requests',
     machine_maint: 'Machine Maintenance',
+    kalkulacije: 'Calculations',
     users: 'Users',
     settings: 'Settings',
     logout: 'Logout',

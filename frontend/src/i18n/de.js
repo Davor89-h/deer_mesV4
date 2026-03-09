@@ -11,6 +11,7 @@ export default {
     orders: 'Aufträge',
     ai: 'KI-Einblicke',
     users: 'Benutzer',
+    kalkulacije: 'Kalkulation',
     settings: 'Einstellungen',
     logout: 'Abmelden',
   },

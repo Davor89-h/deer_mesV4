@@ -19,6 +19,7 @@ export default {
     digital_twin: 'Digitalni dvojnik',
     forms: 'Zahtjevi',
     machine_maint: 'Održavanje strojeva',
+    kalkulacije: 'Kalkulacije',
     users: 'Korisnici',
     settings: 'Postavke',
     logout: 'Odjava',
